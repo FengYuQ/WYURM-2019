@@ -1,2 +1,2 @@
 # WYURM-2019
-2019 wyu robomaster electronic control code summary
+2019 wyu robomaster code summary

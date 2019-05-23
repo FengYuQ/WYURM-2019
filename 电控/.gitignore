@@ -1,0 +1,10 @@
+#ignore the compile rubbish
+*.i
+*.ii
+*.s
+*.S
+*.a
+*.m
+*.o
+*.log
+

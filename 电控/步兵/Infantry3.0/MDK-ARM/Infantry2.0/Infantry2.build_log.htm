@@ -1,0 +1,184 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=1WS9U-SD7R4-HP8ZN-Y8S9C-IQF6Z-4U0W1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  E:\keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\root\Desktop\工作\RM机器人\步兵2019\Infantry3.0\MDK-ARM\Infantry2.0.uvprojx
+Project File Date:  04/13/2019
+
+<h2>Output:</h2>
+Build target 'Infantry2.0'
+compiling inv_mpu.c...
+compiling inv_mpu_dmp_motion_driver.c...
+compiling mpu9250.c...
+..\IMCALib\Module\DMP\mpu9250.c(11): warning:  #550-D: variable "status" was set but never used
+        HAL_StatusTypeDef status;
+..\IMCALib\Module\DMP\mpu9250.c(12): warning:  #177-D: variable "flag" was declared but never referenced
+        HAL_I2C_StateTypeDef flag;
+..\IMCALib\Module\DMP\mpu9250.c: 2 warnings, 0 errors
+compiling can_task.c...
+compiling chassis_task.c...
+compiling control_task.c...
+..\IMCALib\Task\control_task.c(2): error:  #5: cannot open source input file "remote_task.h": No such file or directory
+  #include "remote_task.h"
+..\IMCALib\Task\control_task.c: 0 warnings, 1 error
+compiling gimbal_task.c...
+compiling shoot_task.c...
+..\IMCALib\Task\shoot_task.c(2): error:  #5: cannot open source input file "remote_task.h": No such file or directory
+  #include "remote_task.h"
+..\IMCALib\Task\shoot_task.c: 0 warnings, 1 error
+compiling pid.c...
+compiling ramp.c...
+compiling main.c...
+compiling gpio.c...
+compiling can.c...
+compiling dma.c...
+compiling freertos.c...
+../Src/freertos.c(62): error:  #5: cannot open source input file "imu_task.h": No such file or directory
+  #include "imu_task.h"
+../Src/freertos.c: 0 warnings, 1 error
+compiling i2c.c...
+compiling tim.c...
+compiling usart.c...
+../Src/usart.c(54): error:  #5: cannot open source input file "remote_task.h": No such file or directory
+  #include "remote_task.h"
+../Src/usart.c: 0 warnings, 1 error
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling system_stm32f4xx.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling list.c...
+compiling queue.c...
+compiling tasks.c...
+compiling timers.c...
+compiling imu_tool.c...
+..\IMCALib\Tool\imu_tool.c(1): error:  #5: cannot open source input file "imu_task.h": No such file or directory
+  #include "imu_task.h"
+..\IMCALib\Tool\imu_tool.c: 0 warnings, 1 error
+compiling print_tool.c...
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h(6727): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_RCCEx_PeriphCLKConfig(RCC_PeriphCLKInitTypeDef  *PeriphClkInit);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h(1245): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_RCC_DeInit(void);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h(1246): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef *RCC_OscInitStruct);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h(1247): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t FLatency);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h(254): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_GPIO_LockPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(161): error:  #20: identifier "HAL_LockTypeDef" is undefined
+    HAL_LockTypeDef            Lock;                                                             /*!< DMA locking object                     */  
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h(86): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h(87): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h(88): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMAEx_ChangeMemory(DMA_HandleTypeDef *hdma, uint32_t Address, HAL_DMA_MemoryTypeDef memory);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(669): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_Init(DMA_HandleTypeDef *hdma); 
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(670): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_DeInit(DMA_HandleTypeDef *hdma);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(679): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_Start (DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(680): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_Start_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(681): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_Abort(DMA_HandleTypeDef *hdma);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(682): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_Abort_IT(DMA_HandleTypeDef *hdma);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(683): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_PollForTransfer(DMA_HandleTypeDef *hdma, HAL_DMA_LevelCompleteTypeDef CompleteLevel, uint32_t Timeout);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(685): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_CleanCallbacks(DMA_HandleTypeDef *hdma);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(686): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_RegisterCallback(DMA_HandleTypeDef *hdma, HAL_DMA_CallbackIDTypeDef CallbackID, void (* pCallback)(DMA_HandleTypeDef *_hdma));
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h(687): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DMA_UnRegisterCallback(DMA_HandleTypeDef *hdma, HAL_DMA_CallbackIDTypeDef CallbackID);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(88): error:  #20: identifier "HAL_LockTypeDef" is undefined
+    HAL_LockTypeDef             Lock;               /* FLASH locking object                */
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h(743): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *SectorError);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h(744): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASHEx_Erase_IT(FLASH_EraseInitTypeDef *pEraseInit);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h(745): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASHEx_OBProgram(FLASH_OBProgramInitTypeDef *pOBInit);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(324): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(325): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASH_Program_IT(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(339): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASH_Unlock(void);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(340): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASH_Lock(void);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(341): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASH_OB_Unlock(void);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(342): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASH_OB_Lock(void);
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h(344): error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_FLASH_OB_Launch(void);
+..\IMCALib\Tool\print_tool.c: 0 warnings, 30 errors
+compiling remote_tool.c...
+..\IMCALib\Tool\remote_tool.c(1): error:  #5: cannot open source input file "remote_task.h": No such file or directory
+  #include "remote_task.h"
+..\IMCALib\Tool\remote_tool.c: 0 warnings, 1 error
+"Infantry2.0\Infantry2.0" - 36 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\root\Desktop\工作\RM机器人\步兵2019\Infantry3.0\MDK-ARM\RTE
+  E:\keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  E:\keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Target not created.
+</pre>
+</body>
+</html>
